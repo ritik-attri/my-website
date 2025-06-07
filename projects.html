@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#101a23] dark group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#223649] px-10 py-3">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path></svg>
+            </div>
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Data Engineering Portfolio</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="#">About</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Projects</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Contact</a>
+            </div>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCF1Q4Prnxp9_3xVLoYElreHKolQXtTbj4bzybnREBQa6_rpGMWFBhOgKiP7opzw8QYnVRMfvBeIGZSbjHvdVmxFcjX5jXDlqt73nUrznoMExy8_ZI7O9qPLymUb0VONMySX-g305xiBJA27RPdUdeeVnvpFL0jo22--IY_TmH6Fgq7QD4u6k7-ks59gFNT3wSqRkrQOVwSZ1oVxjhrXteTrD7mrVhmXHYJUDnssCesTMizxzfSWzBhJd_9aRgMUUaNh1-j-2TyZCn-");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-white tracking-light text-[32px] font-bold leading-tight">Featured Projects</p>
+                <p class="text-[#90adcb] text-sm font-normal leading-normal">
+                  Explore a selection of key projects showcasing my expertise in data engineering, including data ingestion, ETL pipelines, and automation.
+                </p>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg bg-[#182634] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-white text-base font-bold leading-tight">Data Ingestion and Predictive Analytics Pipeline</p>
+                    <p class="text-[#90adcb] text-sm font-normal leading-normal">
+                      Developed a robust pipeline for ingesting large datasets, processing them for predictive modeling, and deploying models for real-time predictions.
+                      Technologies used: Python, Spark, AWS S3, AWS SageMaker.
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#223649] text-white text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">View Project</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBoJMmbjjEFdPa6oFkLwmeVDCMzXYW0F3ofdLOR9iIqDlhnGv8WnZxG3cyK03_EWUFUuwbGfzN9G5Q11Ls3T0BTGbOzwnDxKWmQ5uspsMi5xW7nMIMTxJ-w4qAdvK5u-I3W3am2fVeHQTBseNkw3ortql3fZC0FjyO5qtc5iN1K0yPhcW7Vg8W-K2-3fS8Bc1rCY8vvcl1N0QfkLvFG7t1xp_bUdnuKRzLZ3cH7aWI8KMmnWcDRjLqnXY7_Y2q-XAPSHGD-HjeWRuHO");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg bg-[#182634] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-white text-base font-bold leading-tight">Kafka-Spark ETL Project</p>
+                    <p class="text-[#90adcb] text-sm font-normal leading-normal">
+                      Designed and implemented an ETL pipeline using Kafka and Spark for real-time data processing and transformation. This project focused on handling high-volume
+                      data streams and ensuring data integrity. Technologies used: Kafka, Spark Streaming, Scala.
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#223649] text-white text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">View Project</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA4ZfkL3R1Gpt9Zgu5sHoDyqCjGxlF5QYiBgyfDg6b9xm-9Qi4PjoDWx4rjOMQyld6uweGZP6sHg1FPpHf42f8WY5xwR24TbLIHnRxZyA1ub3X6ymAdhBISVYFOhEYyUQcwpv8hxmqTf4FcYkLm_GoHWJbQeFdruGVsbeg7S8cUKXylhkc0l9rIANJoQVQHUGq9qMWrPX7HoMVqFZFtnxgDrtXYOJ54j4ibSC2n7bRaW3z2ga_dV1_eoevbsTdEnuYtYuuoRw_ey-0k");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg bg-[#182634] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-white text-base font-bold leading-tight">Terraform Automation Project</p>
+                    <p class="text-[#90adcb] text-sm font-normal leading-normal">
+                      Automated the deployment and management of cloud infrastructure using Terraform, ensuring consistency and scalability. This project involved setting up
+                      environments for data processing and storage. Technologies used: Terraform, AWS, Azure.
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#223649] text-white text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">View Project</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCCFN1ep_6QST7KnXVGkzLRhqiuDuCy8OF30xZ3ZGMyHaTSAVQO9Pg6f5SLOBiiYMq4apjL55HI99uNfGDOHpR7_VLp0Wi1G2-TexvKzNNJSxRac-zsf5vcf3cGQBTkl2YQgYiHSOv8cMFS8pgx9NK0_vthMMCPFulHljhFJkz7X6A7RjZS6At4AqFRku7XvuAoFOIWMiuNq42yUijuhMf2u8tt8Cq67_cxxdt2c4Hf3Aq5DcUL_qtqDMZKY0IqdtijIfkxa-S5kQMG");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg bg-[#182634] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-white text-base font-bold leading-tight">Data Warehouse Optimization</p>
+                    <p class="text-[#90adcb] text-sm font-normal leading-normal">
+                      Optimized an existing data warehouse for improved query performance and reduced storage costs. This involved schema redesign, indexing strategies, and data
+                      partitioning. Technologies used: SQL, Snowflake, Redshift.
+                    </p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#223649] text-white text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">View Project</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqTwMqbyBTVDdOAZgBxm8V9r57HAK1V13kvawSaNn5eTS8NRwfzVjEZrzQkVxx9TXzfCDHA8dQsxE_c4jKSh74Iy8qBYAUkoDTz0Mi2L3vXcZqNTNYncpXrii_8T6wHrMuXqs5XZPu2DsVjv-9rN9XNQEthHYCVt698IZVXmr5BMVhrxKmBnPqTIm4GrtuuQH6u6WCUxEXkDItfBiLpBNjUyvjfa9ZE5gjGRoHeSI8c5Qq9N52QBA9lMNAbtN4eHzMlUZrOtoXzDL7");'
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
