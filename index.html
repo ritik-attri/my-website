@@ -36,10 +36,10 @@
           </div>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
-              <a class="text-white text-sm font-medium leading-normal" href="#">About</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Projects</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Skills</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Contact</a>
+              <a class="text-white text-sm font-medium leading-normal" href="index.html">About</a>
+              <a class="text-white text-sm font-medium leading-normal" href="projects.html">Projects</a>
+              <a class="text-white text-sm font-medium leading-normal" href="skills.html">Skills</a>
+              <a class="text-white text-sm font-medium leading-normal" href="contact.html">Contact</a>
             </div>
             <div class="flex gap-2">
               <button
@@ -153,35 +153,52 @@
               </div>
             </div>
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact</h2>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-white text-base font-medium leading-normal pb-2">Email</p>
-                <input
-                  placeholder="your.email@example.com"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#314d68] bg-[#182634] focus:border-[#314d68] h-14 placeholder:text-[#90adcb] p-[15px] text-base font-normal leading-normal"
-                  value=""
-                />
-              </label>
-            </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-white text-base font-medium leading-normal pb-2">Message</p>
-                <textarea
-                  placeholder="Your message"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#314d68] bg-[#182634] focus:border-[#314d68] min-h-36 placeholder:text-[#90adcb] p-[15px] text-base font-normal leading-normal"
-                ></textarea>
-              </label>
-            </div>
-            <div class="flex px-4 py-3 justify-end">
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c7ff2] text-white text-sm font-bold leading-normal tracking-[0.015em]"
-              >
-                <span class="truncate">Send</span>
-              </button>
-            </div>
+            <form id="contactForm">
+              <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                <label class="flex flex-col min-w-40 flex-1">
+                  <p class="text-white text-base font-medium leading-normal pb-2">Email</p>
+                  <input
+                    id="emailInput"
+                    type="email"
+                    placeholder="your.email@example.com"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#314d68] bg-[#182634] focus:border-[#314d68] h-14 placeholder:text-[#90adcb] p-[15px] text-base font-normal leading-normal"
+                    value=""
+                  />
+                </label>
+              </div>
+              <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+                <label class="flex flex-col min-w-40 flex-1">
+                  <p class="text-white text-base font-medium leading-normal pb-2">Message</p>
+                  <textarea
+                    id="messageInput"
+                    placeholder="Your message"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#314d68] bg-[#182634] focus:border-[#314d68] min-h-36 placeholder:text-[#90adcb] p-[15px] text-base font-normal leading-normal"
+                  ></textarea>
+                </label>
+              </div>
+              <div class="flex px-4 py-3 justify-end">
+                <button
+                  type="submit"
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c7ff2] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Send</span>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </div>
+  </div>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var email = document.getElementById('emailInput').value;
+      var message = document.getElementById('messageInput').value;
+      var mailto = 'mailto:attri.ritik1@gmail.com?subject=' +
+        encodeURIComponent('Message from ' + email) +
+        '&body=' + encodeURIComponent(message);
+      window.location.href = mailto;
+    });
+  </script>
   </body>
 </html>
